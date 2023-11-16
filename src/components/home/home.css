@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Sansita;
+    src: url(../../assets/fonts/SansitaOne.ttf);
+}
+
+:root {
+    --blue: #0E183E;
+    --dark-blue: #080F28;
+    --orange: #E55625;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sansita;
+    font-variant: small-caps;
+}
+
+.header-container {
+    min-height: 1080px;
+    background-color: var(--blue);
+    padding-top: 200px;
+    overflow-x: hidden;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 250px;
+}
+
+.title-content > p {
+    font-size: 200px;
+    letter-spacing: 20px;
+    color: white;
+}
+
+p > span {
+    color: var(--orange);
+}
+
+.title-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 369px;
+    height: 369px;
+    border-radius: 50%; 
+    background-color: transparent;
+    border: white 10px solid;
+}
+
+.slogan-content {
+    width: 600px;
+    padding: 50px;
+    background-color: var(--blue);
+    position: relative;
+    right: 250px;
+}
+
+.slogan-content > p{
+    font-size: 50px;
+    color: white;
+}
+
+.artist-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.artist-review {
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.artist-review > h2 {
+    color: var(--orange);
+    font-size: 45px;
+}
+
+.artists {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.artists > p {
+    display: inline;
+    margin-left: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+
+.search-container {
+    min-height: 400px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+}
+
+.search-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.search-content > p {
+    color: white;
+    font-size: 45px;
+}
+
+.search-utils {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.search-utils > input {
+    background-color: white;
+    width: 100%;
+    background-color: var(--dark-blue);
+    color: rgba(255,255,255,.5);
+    font-size: 30px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px white solid;
+    outline: none;
+}
+
+.search-utils > input:focus {
+    color: var(--orange)    ;
+}
+
+.search-utils > input:focus::placeholder {
+    color: transparent;
+}
+.search-utils > button {
+    background-color: var(--orange);
+    color: white;
+    font-size: 30px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.search-utils > button:hover {
+    box-shadow: #E55625 0px 0px 10px 0px;
+}
+
+.result-container {
+    min-height: 1000px; /* temp */
+    background-color: var(--blue);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+footer {
+    min-height: 400px;
+    background-color: var(--dark-blue);
+}
+

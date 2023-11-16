@@ -7,7 +7,7 @@ export default function navbar() {
     
     return (
         <>
-            <nav>
+            <nav id = "nav">
                 <ul>
                     <li>
                         <Link to = {"/"}>accueil</Link>
@@ -16,7 +16,7 @@ export default function navbar() {
                         <Link to = {"/billeterie"}>billeterie</Link>
                     </li>
                     <li>
-                        <Link to = {"/programme"}>programe</Link>
+                        <Link to = {"/programme"}>programme</Link>
                     </li>
                 </ul>
             </nav>
