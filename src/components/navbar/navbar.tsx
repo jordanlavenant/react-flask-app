@@ -1,7 +1,7 @@
 import React from 'react'
-import '../navbar.css'
+import './navbar.css'
 import { Link } from 'react-router-dom'
-import billeterie from '../billeterie'
+import billeterie from '../billeterie/billeterie'
 
 export default function navbar() {
     

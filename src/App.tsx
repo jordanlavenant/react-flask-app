@@ -2,10 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
-import Navbar from './components/navbar.tsx'
-import Home from './home.tsx' 
-import Billeterie from './billeterie.tsx'
-import Programme from './programme.tsx'
+import Navbar from './components/navbar/navbar.tsx'
+import Home from './components/home/home.tsx' 
+import Billeterie from './components/billeterie/billeterie.tsx'
+import Programme from './components/programme/programme.tsx'
 
 function App() {
   return (
