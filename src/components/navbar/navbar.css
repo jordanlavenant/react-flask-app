@@ -19,7 +19,7 @@ a:hover {
 li {
     list-style: none;
     transition: .2s;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 li:hover {
@@ -30,7 +30,7 @@ li:hover {
 }
 
 nav {
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;

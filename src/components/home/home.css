@@ -84,6 +84,7 @@ p > span {
 .artist-review > h2 {
     color: var(--orange);
     font-size: 45px;
+    margin-bottom: 20px;
 }
 
 .artists {
