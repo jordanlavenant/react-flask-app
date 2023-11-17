@@ -60,15 +60,14 @@ export default function home() {
       </section>
 
       <section className="result-container">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card 
+          id = {2}
+          artist = {"daft punk"}
+          date = {"6 & 7 octobre"}
+          hour = {"21:00 - 02:00"}
+          style = {"Electro"}
+        />
+   
       </section>
 
       <footer>

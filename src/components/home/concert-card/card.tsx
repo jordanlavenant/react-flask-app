@@ -1,13 +1,24 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './card.css'
 
-export default function card() {
+interface CardProps {
+  id: number,
+  artist: string,
+  date: string,
+  hour: string,
+  style: string,
+}
+
+export default function card({id,artist,date,hour,style}: CardProps) {
   return (
+    <Link to = {`/artiste/${id}`}>
     <div className="card">
-        <p>daft punk</p>
-        <p>6 & 7 octobre</p>	
-        <p>21:00 - 02:00</p>
-        <p>Electro</p>
+        <p>{artist}</p>
+        <p>{date}</p>	
+        <p>{hour}</p>
+        <p>{style}</p>
     </div>
+    </Link>
   )
 }
