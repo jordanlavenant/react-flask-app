@@ -3,6 +3,8 @@
     src: url(../../assets/fonts/SansitaOne.ttf);
 }
 
+a { text-decoration: none;}
+
 :root {
     --blue: #0E183E;
     --dark-blue: #080F28;

@@ -48,8 +48,7 @@ export default function home() {
       />
       );
   });
-
-
+  
   return (
     <>
       <section className="header-container">

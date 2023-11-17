@@ -9,6 +9,12 @@
     --orange: #E55625;
 }
 
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;  
+}
+
 * {
     margin: 0;
     padding: 0;
