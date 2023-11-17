@@ -10,14 +10,14 @@ interface CardProps {
   style: string,
 }
 
-export default function card({id,artist,date,hour,style}: CardProps) {
+export default function card(props: CardProps) {
   return (
-    <Link to = {`/concert/${id}`}>
+    <Link to = {`/concert/${props.id}`}>
     <div className="card">
-        <p>{artist}</p>
-        <p>{date}</p>	
-        <p>{hour}</p>
-        <p>{style}</p>
+        <p>{props.artist}</p>
+        <p>{props.date}</p>	
+        <p>{props.hour}</p>
+        <p>{props.style}</p>
     </div>
     </Link>
   )
