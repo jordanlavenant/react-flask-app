@@ -9,18 +9,17 @@
     --orange: #E55625;
 }
 
-a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;  
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Sansita;
     font-variant: small-caps;
+}
+
+a {
+    width: 350px;
+    height: 350px;
 }
 
 .header-container {
@@ -169,7 +168,7 @@ p > span {
 }
 
 .result-container {
-    min-height: 1000px; /* temp */
+    min-height: auto; /* temp */
     background-color: var(--blue);
     padding: 50px;
     display: flex;

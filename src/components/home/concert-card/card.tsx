@@ -12,7 +12,7 @@ interface CardProps {
 
 export default function card({id,artist,date,hour,style}: CardProps) {
   return (
-    <Link to = {`/artiste/${id}`}>
+    <Link to = {`/concert/${id}`}>
     <div className="card">
         <p>{artist}</p>
         <p>{date}</p>	

@@ -4,18 +4,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: #E55625;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    transition: .2s;
-}
-
 li {
     list-style: none;
     transition: .2s;
@@ -27,6 +15,18 @@ li:hover {
     transform: scale(1.1);
     transition: .2s;
     cursor: pointer;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+li > a:hover {
+    color: #E55625;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition: .2s;
 }
 
 nav {
@@ -43,9 +43,9 @@ nav {
     z-index: 100;
 }
 
-nav:hover {
+/* nav:hover {
     background-color: rgba(8,15,40,0.95);
-}
+} */
 
 ul {
     display: flex;

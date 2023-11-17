@@ -35,7 +35,7 @@ export default function home() {
     },
   ];
 
-  let cardsList: React.ReactElement[] = [];
+  let cardsList: React.ReactElement[] =  [];
   
   concertListExample.forEach((concert) => {
     cardsList.push(
@@ -48,7 +48,7 @@ export default function home() {
       />
       );
   });
-  
+
   return (
     <>
       <section className="header-container">
