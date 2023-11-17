@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './concert-card/card.tsx'
+import Footer from '../footer/footer.tsx'
 import './home.css'
 
 export default function home() {
@@ -109,9 +110,8 @@ export default function home() {
         {cardsList} 
       </section>
 
-      <footer>
-
-      </footer>
+      <Footer />
+      
     </>
   )
 }
