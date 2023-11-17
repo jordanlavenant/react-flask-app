@@ -3,6 +3,53 @@ import Card from './concert-card/card.tsx'
 import './home.css'
 
 export default function home() {
+
+  const concertListExample = [
+    {
+      id: 1,
+      artist: "daft punk",
+      date: "6 & 7 octobre",
+      hour: "21:00 - 02:00",
+      style: "Electro",
+    },
+    {
+      id: 2,
+      artist: "Imagine Dragons",
+      date: "16 octobre",
+      hour: "14:00 - 19:00",
+      style: "Electro - Pop",
+    },
+    {
+      id: 3,
+      artist: "Damso",
+      date: "28 & 29 octobre",
+      hour: "19:00 - 00:00",
+      style: "Rap",
+    },
+    {
+      id: 4,
+      artist: "4am-liam",
+      date: "3 novembre",
+      hour: "20:00 - 23:30",
+      style: "Electro - Rap",
+    },
+  ];
+
+  let cardsList: React.ReactElement[] = [];
+  
+  concertListExample.forEach((concert) => {
+    cardsList.push(
+      <Card 
+        id = {concert.id}
+        artist = {concert.artist}
+        date = {concert.date}
+        hour = {concert.hour}
+        style = {concert.style}
+      />
+      );
+  });
+
+
   return (
     <>
       <section className="header-container">
@@ -60,14 +107,7 @@ export default function home() {
       </section>
 
       <section className="result-container">
-        <Card 
-          id = {2}
-          artist = {"daft punk"}
-          date = {"6 & 7 octobre"}
-          hour = {"21:00 - 02:00"}
-          style = {"Electro"}
-        />
-   
+        {cardsList} 
       </section>
 
       <footer>
