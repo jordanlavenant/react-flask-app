@@ -176,9 +176,3 @@ p > span {
     flex-wrap: wrap;
     gap: 50px;
 }
-
-footer {
-    min-height: 400px;
-    background-color: var(--dark-blue);
-}
-

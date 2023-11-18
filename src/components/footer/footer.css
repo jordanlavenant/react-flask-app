@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Sansita;
+    src: url(../../assets/fonts/SansitaOne.ttf);
+}
+
+:root {
+    --blue: #0E183E;
+    --dark-blue: #080F28;
+    --orange: #E55625;
+    --gray: #242527;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sansita;
+    font-variant: small-caps;
+}
+
+footer > .main-content{
+    height: 360px;
+    background-color: var(--dark-blue);
+}
+
+footer > .footer-content {
+    height: 40px;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

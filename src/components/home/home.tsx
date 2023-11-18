@@ -109,9 +109,7 @@ export default function home() {
       <section className="result-container">
         {cardsList} 
       </section>
-
       <Footer />
-      
     </>
   )
 }
