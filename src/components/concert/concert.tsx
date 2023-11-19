@@ -1,12 +1,12 @@
 import React from 'react'
 import './concert.css'
+import { useParams } from 'react-router-dom'
 
-interface ConcertProps {
-    id: number,
-}
+export default function concert() {
 
-export default function concert(props:ConcertProps) {
-  return (
-    <div className='content'>{props.id}</div>
-  )
+    const { id } = useParams();
+
+    return (
+        <div className='content'>{id}</div>
+    )
 }

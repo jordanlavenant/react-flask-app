@@ -29,9 +29,7 @@ function App() {
         <Route 
           path="/concert/:id"
           element={
-            <Concert 
-              id = {1}
-            />
+            <Concert />
           }
         />
       </Routes>
